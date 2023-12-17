@@ -4,7 +4,14 @@
 # which will treat the first line as the toolchain name, and therefore show it
 # to the user in the error, instead of "error: invalid channel name '[toolchain]'".
 
+
+# @TODO: Add Android and IOS support, since these have the perfect
+# hardware for this app
 [toolchain]
-channel = "1.72.0"
+channel = "1.74"
 components = [ "rustfmt", "clippy" ]
-targets = [ "wasm32-unknown-unknown" ]
+targets = [
+    "wasm32-unknown-unknown",
+    "stable-x86_64-unknown-linux-gnu",
+    "stable-aarch64-unknown-linux-musl"
+]

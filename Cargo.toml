@@ -1,20 +1,24 @@
 [package]
-name = "eframe_template"
+name = "kendo_trainer"
 version = "0.1.0"
-authors = ["Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
+authors = ["Adora Boutin <adora.boutin@proton.me>"]
 edition = "2021"
-rust-version = "1.72"
+rust-version = "1.74"
+license = "CDDL-1.1"
 
 
 [dependencies]
 egui = "0.24.1"
 eframe = { version = "0.24.1", default-features = false, features = [
+    #"android-game-activity
+    "document-features",
     "accesskit",     # Make egui comptaible with screen readers. NOTE: adds a lot of dependencies.
     "default_fonts", # Embed the default egui fonts.
     "glow",          # Use the glow rendering backend. Alternative: "wgpu".
     "persistence",   # Enable restoring app state when restarting the app.
 ] }
 log = "0.4"
+simple-log = "1.6"
 
 # You only need serde if you want app persistence:
 serde = { version = "1", features = ["derive"] }

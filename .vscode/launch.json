@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug kendo_trainer",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/kendo_trainer",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "sourceLanguages": ["rust"],
+            "preLaunchTask": "build"
+        }
+    ]
+}
